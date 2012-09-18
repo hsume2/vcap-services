@@ -75,7 +75,7 @@ class VCAP::Services::Neo4j::Node
     @free_ports = Set.new
     options[:port_range].each {|port| @free_ports << port}
     @mutex = Mutex.new
-    @supported_versions = ["1.4"]
+    @supported_versions = ["1.7.2"]
   end
 
   def fetch_port(port=nil)
